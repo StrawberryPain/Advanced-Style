@@ -17,7 +17,7 @@ body {
   top: 0;
   height: 100vh;
   width: 320px;
-  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.0196078431);
+  box-shadow: 16px 0px 52px 0px #0e185033, -2px 0px 4px 0px #454f7e05;
 }
 
 .header {
@@ -28,12 +28,14 @@ body {
   justify-content: space-between;
   margin: 0 24px 0 24px;
   gap: 16px;
-}
-.header__item {
-  margin: 23px 0 53px 0;
-}
-.header__item:nth-child(2) {
-  margin: 19px auto 46px 0;
+
+  &__item {
+    margin: 23px 0 53px 0;
+  }
+
+  &__item:nth-child(2) {
+    margin: 19px auto 46px 0;
+  }
 }
 
 .list {
@@ -43,16 +45,18 @@ body {
   gap: 32px;
   list-style-type: none;
   margin-bottom: auto;
-}
-.list__item-link {
-  padding-left: 24px;
-  text-decoration: none;
-  color: #1b1c21;
-  font-weight: 500;
-}
-.list__item-link:focus {
-  border-left: 4px solid #41f6d7;
-  color: #7e7e82;
+
+  &__item-link {
+    padding-left: 24px;
+    text-decoration: none;
+    color: #1b1c21;
+    font-weight: 500;
+  }
+
+  &__item-link:focus {
+    border-left: 4px solid #41f6d7;
+    color: #7e7e82;
+  }
 }
 
 .icon {
@@ -67,10 +71,11 @@ body {
   text-decoration: none;
   color: #1b1c21;
   font-weight: 500;
-}
-.footer-link[href*=tel] {
-  font-size: 24px;
-  font-weight: bold;
+
+  &[href*="tel"] {
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
 
 .language {
@@ -79,11 +84,13 @@ body {
   gap: 7px;
   margin: 40px 0 32px 24px;
   color: #1b1c21;
-}
-.language__link {
-  text-decoration: none;
-  color: #1b1c21;
-}
-.language__link:focus {
-  color: #7e7e82;
+
+  &__link {
+    text-decoration: none;
+    color: #1b1c21;
+  }
+
+  &__link:focus {
+    color: #7e7e82;
+  }
 }
