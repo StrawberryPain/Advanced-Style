@@ -21,9 +21,6 @@ body {
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   margin: 0 24px 0 24px;
@@ -88,4 +85,4 @@ body {
 .language__link:focus {
   color: #7e7e82;
   transition: 300ms;
-}
+}/*# sourceMappingURL=style.css.map */
